@@ -35,7 +35,7 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo helloApiInfo() {
-		return new ApiInfoBuilder().title("Hello World API").description("Hello World API reference for developers")
+		return new ApiInfoBuilder().title("Hello API").description("Hello World API reference for developers")
 				.termsOfServiceUrl("http://JustDummywebsite.com")
 				.contact(new Contact("Hello World", "http://JustDummywebsite.com", "helloworld@gmail.com"))
 				.license("Hello World License").licenseUrl("helloworld@gmail.com").version("1.0").build();
