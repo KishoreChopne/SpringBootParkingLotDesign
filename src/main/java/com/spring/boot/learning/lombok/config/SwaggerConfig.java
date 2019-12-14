@@ -27,5 +27,18 @@ public class SwaggerConfig {
 				.contact(new Contact("Parking Lot", "http://JustDummywebsite.com", "parkinglot@gmail.com"))
 				.license("Parking Lot License").licenseUrl("parkinglot@gmail.com").version("1.0").build();
 	}
+	
+	@Bean
+	public Docket helloApi() {
+		return new Docket(DocumentationType.SWAGGER_2).groupName("helloWorld-api").apiInfo(helloApiInfo()).select()
+				.apis(RequestHandlerSelectors.basePackage("com.spring.boot.learning.lombok.hellocontroller")).build();
+	}
+
+	private ApiInfo helloApiInfo() {
+		return new ApiInfoBuilder().title("Hello API").description("Hello World API reference for developers")
+				.termsOfServiceUrl("http://JustDummywebsite.com")
+				.contact(new Contact("Hello World", "http://JustDummywebsite.com", "helloworld@gmail.com"))
+				.license("Hello World License").licenseUrl("helloworld@gmail.com").version("1.0").build();
+	}
 
 }
