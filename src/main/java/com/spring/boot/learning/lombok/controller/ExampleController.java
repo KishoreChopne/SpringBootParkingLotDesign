@@ -36,10 +36,15 @@ public class ExampleController {
 		return example.unParkVehicle(id);
 	}
 
-//	@GetMapping("/hello")
-//	public String Hello() {
-//		return example.Hello();
-//	}
+	@GetMapping("/hellopcf")
+	public String Hello() {
+		return "Hello PCF";
+	}
+	
+	@GetMapping("/hellojenkins")
+	public String helloJenkins() {
+		return "Hello Jenkins";
+	}
 //
 //	@PostMapping("/myInfo/{name}/{experiance}/{skills}")
 //	public MyIntroductionDTO myInfo(@PathVariable String name, @PathVariable String experiance, @PathVariable String skills) {
