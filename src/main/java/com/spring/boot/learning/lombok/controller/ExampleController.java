@@ -43,7 +43,7 @@ public class ExampleController {
 	
 	@GetMapping("/hellojenkins")
 	public String helloJenkins() {
-		return "Hello Jenkins";
+		return "Hello Jenkin";
 	}
 //
 //	@PostMapping("/myInfo/{name}/{experiance}/{skills}")
